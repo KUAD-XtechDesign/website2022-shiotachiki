@@ -16,7 +16,7 @@ body {
   position: relative;
 }
 
-body {
+body { 
   font-size: 16px;
   line-height: 1.6;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
@@ -198,6 +198,7 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
 .top_eye_catch {
   height: 500px;
   color: #fff;
+  font-family: 'Kaisei Decol', serif;
   font-weight: bold;
   background-image: url(../images/IMG_20211224_144856.jpg);/* 背景画像 */
   background-size: cover;/* 背景画像のサイズ 要素いっぱいに表示 */
@@ -211,7 +212,7 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
 }
 
 .link_menu{
-  padding-top: 10px;
+  padding-top: 50px;
 }
 
 .each_link{
@@ -222,12 +223,13 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
   width: 200px;
 }
 
-.each_link .link_txt{
+.each_link .link_txt{  writing-mode: vertical-rl;
   margin-left: 30px;
   flex: 1;
 }
 
 .each_link .link_title{
+ 
   font-weight: bold;
   padding-bottom: 5px;
   margin-bottom: 5px;
