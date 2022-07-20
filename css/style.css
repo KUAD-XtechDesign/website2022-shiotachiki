@@ -17,7 +17,7 @@ body {
 }
 
 body { 
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   color: #333333;
@@ -36,7 +36,7 @@ a:hover {
 
 /* 画像は親要素からはみ出さないように最大幅を100%に */
 img {
-  max-width: 100%;
+  max-width: 500%;
   height: auto;
 }
 
@@ -98,7 +98,7 @@ header .inner {
 /* メニュー */
 #global_menu {
   display: flex;
-  font-size: 23px;
+  font-size: 20px;
   position: relative;
 }
 
@@ -165,7 +165,7 @@ header .inner {
 footer
 ======================================================*/
 footer {
-  background-color: #333;
+  background-color: rgb(132, 194, 129);
   color: #fff;
   text-align: center;
   padding: 20px;
@@ -197,7 +197,7 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
 ================================================= */
 .top_eye_catch {
   height: 500px;
-  color: #fff;
+  color: rgb(91, 74, 74);
   font-family: 'Kaisei Decol', serif;
   font-weight: bold;
   background-image: url(../images/IMG_20211224_144856.jpg);/* 背景画像 */
@@ -212,7 +212,7 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
 }
 
 .link_menu{
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .each_link{
@@ -386,7 +386,7 @@ profileページ
 }
 
 .profile_container h3{
-  margin-right: 30px;
+  margin-right: px;
 }
 
 
