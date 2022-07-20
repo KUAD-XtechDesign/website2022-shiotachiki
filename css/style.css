@@ -36,7 +36,7 @@ a:hover {
 
 /* 画像は親要素からはみ出さないように最大幅を100%に */
 img {
-  max-width: 450%;
+  max-width: 200%;
 
   height: auto;
 }
