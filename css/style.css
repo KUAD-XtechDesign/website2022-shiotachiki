@@ -11,7 +11,7 @@
 html,
 body {
   height: 100%;
-  font-feature-settings: "palt";
+  /* font-feature-settings: "palt"; */
   background-color: #fff;
   position: relative;
 }
@@ -36,7 +36,7 @@ a:hover {
 
 /* 画像は親要素からはみ出さないように最大幅を100%に */
 img {
-  max-width: 200%;
+  max-width: 100%;
 
   height: auto;
 }
@@ -186,7 +186,7 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
   margin-bottom: 40px;
 }
 
-.contents {
+
   max-width: 1000px;
   min-height: 600px;
   padding: 20px;
@@ -218,36 +218,87 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
 
 .each_link{
   display: flex;
+  justify-content: space-around;
+  margin-bottom: 130px;
+}
+
+.each_link:nth-child(even){
+  flex-direction: row-reverse;
 }
 
 .each_link .link_pic{
-  width: 200px;
+  width: 46%;
+  margin: 0 60px;
 }
 
+.pic_container{
+  position: relative;
+  background-color: rgb(132, 194, 129);
+}
+
+.pic_container img{
+  display: block;
+  position: relative;
+}
+
+.rback{
+  top: -50px;
+  left: -50px;
+}
+
+.lback{
+  top: -50px;
+  right: -50px;
+}
+
+
+
 .each_link .link_txt{  writing-mode: vertical-rl;
-  margin-left: 30px;
-  flex: 1;
+  height: 300px;
 }
 
 .each_link .link_title{
- 
   font-weight: bold;
+<<<<<<< HEAD
   padding-bottom: 5px;
   margin-bottom: 5px;
   border-bottom: 1px solid #333;
   
+=======
+  margin-left: 60px;
+  position: relative;
+}
+
+.each_link .link_title span{
+  position: relative;
+  z-index: 2;
+}
+
+.each_link .link_title::before{
+  content: "";
+    display: block;
+    width: 33px;
+    height: 80%;
+    position: absolute;
+    left: -15px;
+    bottom: 10px;
+    background-color: rgb(214, 243, 168);
+}
+
+.explain{
+>>>>>>> 58fb634c5f13539f1fb2694e141395707feeac98
 }
 
 a.link_btn{
   text-decoration: none;
-  font-weight: bold;
-  display: block;
-  margin: 30px 0;
-  border: 2px solid #666;
-  padding: 5px;
-  text-align: center;
-  border-radius: 50px;
-  width: 200px;
+    font-weight: bold;
+    display: block;
+    margin: 10px;
+    border: 2px solid #666;
+    padding: 5px;
+    text-align: center;
+    border-radius: 50px;
+    height: 200px;
 }
 
 a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
@@ -333,7 +384,7 @@ reportページ
   display: flex;
 }
 
-@media (max-width: 900px) {
+
   .report .outline {
     display: block;
   }
