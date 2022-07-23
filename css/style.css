@@ -186,7 +186,7 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
   margin-bottom: 40px;
 }
 
-
+.contents {
   max-width: 1000px;
   min-height: 600px;
   padding: 20px;
@@ -259,12 +259,6 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
 
 .each_link .link_title{
   font-weight: bold;
-<<<<<<< HEAD
-  padding-bottom: 5px;
-  margin-bottom: 5px;
-  border-bottom: 1px solid #333;
-  
-=======
   margin-left: 60px;
   position: relative;
 }
@@ -286,7 +280,6 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
 }
 
 .explain{
->>>>>>> 58fb634c5f13539f1fb2694e141395707feeac98
 }
 
 a.link_btn{
@@ -385,10 +378,10 @@ reportページ
 }
 
 
-  .report .outline {
-    display: block;
-  }
+.report .outline {
+  display: block;
 }
+
 
 .report .outline .pic {
   width: 45%;
@@ -438,9 +431,6 @@ profileページ
   overflow: auto;
 }
 
-.profile_container h3{
-  margin-right: px;
-}
 
 
 
