@@ -279,8 +279,7 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
     background-color: rgb(214, 243, 168);
 }
 
-.explain{
-}
+
 
 a.link_btn{
   text-decoration: none;
@@ -296,7 +295,7 @@ a.link_btn{
 
 a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
   opacity: 1;/* 半透明にならないように上書き */
-  border-radius: 0;
+
   color: #fff;
   background-color: #333;
 }
@@ -368,7 +367,7 @@ reportページ
 }
 
 .report {
-  border: 1px solid #ccc;
+
   padding: 40px;
 }
 
