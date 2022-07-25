@@ -321,15 +321,15 @@ worksページ
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 100px) {
   .thumb_list li {
-    width: 100%;
+    width: 50%;
   }
 }
 
 .thumb_list li a {
   display: block;
-  height: 120px;
+  height: 100px;
   border: 1px solid #ccc;
   opacity: 1;
   overflow: hidden;/* はみ出た部分は隠す */
