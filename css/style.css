@@ -91,6 +91,10 @@ header .inner {
 }
 
 /* ロゴ */
+#header_logo {
+  width: 150px;
+}
+
 #header_logo img {
   display: block;
   width: 100px;
