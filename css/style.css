@@ -2,7 +2,7 @@
 /*======================================================
 基本 全体の設定
 ======================================================*/
-* {
+* 
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -20,7 +20,7 @@ body {
   font-size: 20px;
   line-height: 1.6;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-  color: #333333;
+  color: #e83131;
   letter-spacing: 0.05em;
 }
 
