@@ -2,7 +2,7 @@
 /*======================================================
 基本 全体の設定
 ======================================================*/
-* {
+* 
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -11,16 +11,16 @@
 html,
 body {
   height: 100%;
-  font-feature-settings: "palt";
+  /* font-feature-settings: "palt"; */
   background-color: #fff;
   position: relative;
 }
 
-body {
-  font-size: 16px;
+body { 
+  font-size: 20px;
   line-height: 1.6;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-  color: #333333;
+  color: #e83131;
   letter-spacing: 0.05em;
 }
 
@@ -37,6 +37,7 @@ a:hover {
 /* 画像は親要素からはみ出さないように最大幅を100%に */
 img {
   max-width: 100%;
+
   height: auto;
 }
 
@@ -90,6 +91,10 @@ header .inner {
 }
 
 /* ロゴ */
+#header_logo {
+  width: 150px;
+}
+
 #header_logo img {
   display: block;
   width: 100px;
@@ -98,7 +103,7 @@ header .inner {
 /* メニュー */
 #global_menu {
   display: flex;
-  font-size: 23px;
+  font-size: 20px;
   position: relative;
 }
 
@@ -165,7 +170,7 @@ header .inner {
 footer
 ======================================================*/
 footer {
-  background-color: #333;
+  background-color: rgb(132, 194, 129);
   color: #fff;
   text-align: center;
   padding: 20px;
@@ -197,9 +202,10 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
 ================================================= */
 .top_eye_catch {
   height: 500px;
-  color: #fff;
+  color: rgb(91, 74, 74);
+  font-family: 'Kaisei Decol', serif;
   font-weight: bold;
-  background-image: url(../images/top.jpg);/* 背景画像 */
+  background-image: url(../images/IMG_20211224_144856.jpg);/* 背景画像 */
   background-size: cover;/* 背景画像のサイズ 要素いっぱいに表示 */
   background-position: center center;/* 背景画像の位置 */
   background-attachment: fixed;/* スクロールしたときの背景画像の位置 固定 */
@@ -211,46 +217,91 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
 }
 
 .link_menu{
-  padding-top: 10px;
+  padding-top: 100px;
 }
 
 .each_link{
   display: flex;
+  justify-content: space-around;
+  margin-bottom: 130px;
+}
+
+.each_link:nth-child(even){
+  flex-direction: row-reverse;
 }
 
 .each_link .link_pic{
-  width: 200px;
+  width: 46%;
+  margin: 0 60px;
 }
 
-.each_link .link_txt{
-  margin-left: 30px;
-  flex: 1;
+.pic_container{
+  position: relative;
+  background-color: rgb(132, 194, 129);
+}
+
+.pic_container img{
+  display: block;
+  position: relative;
+}
+
+.rback{
+  top: -50px;
+  left: -50px;
+}
+
+.lback{
+  top: -50px;
+  right: -50px;
+}
+
+
+
+.each_link .link_txt{  writing-mode: vertical-rl;
+  height: 300px;
 }
 
 .each_link .link_title{
   font-weight: bold;
-  padding-bottom: 5px;
-  margin-bottom: 5px;
-  border-bottom: 1px solid #333;
+  margin-left: 60px;
+  position: relative;
 }
+
+.each_link .link_title span{
+  position: relative;
+  z-index: 2;
+}
+
+.each_link .link_title::before{
+  content: "";
+    display: block;
+    width: 33px;
+    height: 80%;
+    position: absolute;
+    left: -15px;
+    bottom: 10px;
+    background-color: rgb(214, 243, 168);
+}
+
+
 
 a.link_btn{
   text-decoration: none;
-  font-weight: bold;
-  display: block;
-  margin: 30px 0;
-  border: 2px solid #666;
-  padding: 5px;
-  text-align: center;
-  border-radius: 50px;
-  width: 200px;
+    font-weight: bold;
+    display: block;
+    margin: 10px;
+    border: 2px solid rgb(152, 220, 175);
+    padding: 5px;
+    text-align: center;
+    border-radius: 50px;
+    height: 200px;
 }
 
 a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
   opacity: 1;/* 半透明にならないように上書き */
-  border-radius: 0;
+
   color: #fff;
-  background-color: #333;
+  background-color: rgba(122, 202, 128, 0.695);
 }
 
 /* =================================================
@@ -274,15 +325,15 @@ worksページ
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 100px) {
   .thumb_list li {
-    width: 100%;
+    width: 0%;
   }
 }
 
 .thumb_list li a {
   display: block;
-  height: 120px;
+  height: 100px;
   border: 1px solid #ccc;
   opacity: 1;
   overflow: hidden;/* はみ出た部分は隠す */
@@ -309,7 +360,7 @@ reportページ
 
 .report_eye_catch {
   height: 300px;
-  background-image: url(../images/report.jpg);
+  background-image: url(../images/IMG_20210920_132459.jpg);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -320,7 +371,7 @@ reportページ
 }
 
 .report {
-  border: 1px solid #ccc;
+
   padding: 40px;
 }
 
@@ -329,11 +380,11 @@ reportページ
   display: flex;
 }
 
-@media (max-width: 900px) {
-  .report .outline {
-    display: block;
-  }
+
+.report .outline {
+  display: block;
 }
+
 
 .report .outline .pic {
   width: 45%;
@@ -383,9 +434,6 @@ profileページ
   overflow: auto;
 }
 
-.profile_container h3{
-  margin-right: 30px;
-}
 
 
 
